@@ -1,0 +1,47 @@
+body {
+  background-color:#333;
+  margin: 15px;
+
+}
+
+.card{
+  background-color: black;
+  width: 100%;
+  margin: auto;
+
+}
+
+.card-text {
+  color: #fff;
+  font-size: x-large;
+  align-items: center;
+}
+
+.card-subtitle {
+  float: right;
+  font-size: large;
+}
+
+.quote-box{
+  width: 45rem;
+  margin:auto;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  
+}
+
+.btn {
+  border-radius: 0;
+  background-color: black;
+  color: #fff;
+  margin: auto;
+  float: right;
+}
+
+.site-title{
+  color: #fff;
+  text-align: center;
+}
