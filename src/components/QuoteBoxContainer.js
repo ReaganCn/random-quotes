@@ -1,4 +1,8 @@
 import React, { useState, useEffect } from "react";
+import { gsap } from "gsap";
+import { TextPlugin } from "gsap/TextPlugin";
+
+gsap.registerPlugin(TextPlugin);
 
 import QuoteBoxComponent from "./QuoteBoxComponent";
 
@@ -26,12 +30,14 @@ function QuoteBoxContainer() {
   }, [quotes]);
 
   const randomQuote = () => {
-    if (quotes.length !== 0) {
-      let randomIndex = Math.floor(Math.random() * quotes.length);
-      setText(quotes[randomIndex].text);
-      setAuthor(quotes[randomIndex].author);
-      setLoading(false);
-    }
+      if (quotes.length !== 0) {
+        let randomIndex = Math.floor(Math.random() * quotes.length);
+          setText(quotes[randomIndex].text);       
+        setAuthor(quotes[randomIndex].author);
+        setLoading(false);
+      }
+
+
   };
 
   return (
