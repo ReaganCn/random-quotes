@@ -2,3 +2,4 @@
 
 ## Technologies
 - Twitter API
+- ReactJS
