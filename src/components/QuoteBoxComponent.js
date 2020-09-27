@@ -7,20 +7,20 @@ function QuoteBoxComponent(props) {
   let QuoteBox = useRef(null);
 
   useEffect(() => {
-    TweenMax.from(newQuoteButton, 2.7, {
+    TweenMax.from(newQuoteButton, 2.5, {
       y: "-500",
-      ease: Elastic.easeOut.config(1, 0.3),
+      ease: Elastic.easeOut.config(1, 0.5),
     });
-    TweenMax.from(QuoteBox, 2.7, {
+    TweenMax.from(QuoteBox, 2.5, {
       y: "500",
-      ease: Elastic.easeOut.config(1, 0.3),
+      ease: Elastic.easeOut.config(1, 0.5),
     });
   }, []);
 
   const newQuoteAnimation = () => {
     var slide = new TimelineMax();
 
-    slide.to(QuoteBox, 0.7, {
+    slide.to(QuoteBox, 1, {
       marginLeft: "-175%",
       ease: Power3.easeOut(),
     });
@@ -30,7 +30,7 @@ function QuoteBoxComponent(props) {
     setTimeout(() => {
       props.onClick();
     }, 700);
-    slide.to(QuoteBox, 0.7, {
+    slide.to(QuoteBox, 1, {
       marginLeft: "0%",
       opacity: 1,
       ease: Back.easeOut,
