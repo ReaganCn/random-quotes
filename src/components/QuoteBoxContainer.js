@@ -36,8 +36,6 @@ function QuoteBoxContainer() {
         setAuthor(quotes[randomIndex].author);
         setLoading(false);
       }
-
-
   };
 
   return (

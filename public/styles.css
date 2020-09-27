@@ -1,7 +1,11 @@
 body {
   background-color:#333;
   margin: 15px;
+overflow: hidden;
+}
 
+button {
+  outline:none !important;
 }
 
 .card{
@@ -30,7 +34,6 @@ body {
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  
 }
 
 .btn {
