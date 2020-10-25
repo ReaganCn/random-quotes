@@ -50,7 +50,6 @@ function QuoteBoxComponent(props) {
       </button>
       <div
         className="card"
-        style={{ width: "45rem" }}
         ref={(element) => (QuoteBox = element)}
       >
         <div className="card-body">

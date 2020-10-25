@@ -12,7 +12,6 @@ button {
   background-color: black;
   width: 100%;
   margin: auto;
-
 }
 
 .card-text {
@@ -47,4 +46,14 @@ button {
 .site-title{
   color: #fff;
   text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+.quote-box {
+  width: 90vw;
+ 
+}
+.card-text, .card-subtitle, .btn, a {
+  font-size: small !important;
+}
 }
