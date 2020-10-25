@@ -5,7 +5,7 @@ overflow: hidden;
 }
 
 button {
-  outline:none !important;
+  outline: none !important;
 }
 
 .card{
@@ -41,6 +41,7 @@ button {
   color: #fff;
   margin: auto;
   float: right;
+  outline:none !important;
 }
 
 .site-title{
